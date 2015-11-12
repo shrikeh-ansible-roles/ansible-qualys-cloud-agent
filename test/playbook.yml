@@ -13,7 +13,7 @@
 - name: Test host
   hosts: test
   vars:
-    qualys_agent_activation_key: "{{ lookup('env', TEST_QUALYS_AGENT_ACTIVATION_KEY) }}"
+    qualys_agent_activation_key: "{{ lookup('env', 'TEST_QUALYS_AGENT_ACTIVATION_KEY') }}"
   roles:
     - { role: '../../' }
 
