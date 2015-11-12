@@ -1,0 +1,5 @@
+---
+# defaults file for ansible-qualys-cloud-agent
+qualys_agent_pkg_state_latest: no
+qualys_agent_repository_uri: ''
+...

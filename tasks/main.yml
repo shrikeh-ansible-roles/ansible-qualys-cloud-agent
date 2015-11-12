@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-qualys-cloud-agent
+- name: Install the agent
+  yum:
+    name: "{{ qualys_agent_repository_uri }}"
+    state: state: "{{ 'latest' if qualys_agent_pkg_state_latest else 'present' }}"
+  when: ansible_pkg_mgr == 'yum'

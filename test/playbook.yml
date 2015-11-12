@@ -1,0 +1,21 @@
+---
+
+- name: Local host for running testing
+  hosts: local
+  tasks:
+    - name: Add test machine to inventory
+      add_host:
+        name:  "{{ lookup('env', TEST_QUALYS_AGENT_HOSTNAME) }}"
+        connection: "{{ lookup('env', TEST_QUALYS_AGENT_CONNECTION) }}"
+        group: test
+
+
+- name: Test host
+  hosts: test
+  vars:
+    qualys_agent_activation_key: "{{ lookup('env', TEST_QUALYS_AGENT_ACTIVATION_KEY) }}"
+  roles:
+    - { role: '../../' }
+
+
+...
