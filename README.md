@@ -2,6 +2,7 @@
 =========
 [![Ansible Role](https://img.shields.io/ansible/role/5948.svg)](https://galaxy.ansible.com/detail#/role/5948)
 [![Build Status](https://travis-ci.org/shrikeh/ansible-qualys-cloud-agent.svg)](https://travis-ci.org/shrikeh/ansible-qualys-cloud-agent)
+[![GitHub Stars](https://img.shields.io/github/stars/shrikeh/ansible-qualys-cloud-agent.svg)](https://github.com/shrikeh/ansible-qualys-cloud-agent)
 
 This role installs the [Qualys Cloud Agent][qualys_cloud_agent] on Linux hosts. This is not yet production, or even testing, ready.
 
